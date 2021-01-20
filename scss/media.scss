@@ -1,0 +1,283 @@
+@import "mixin";
+
+@media screen and (max-width: 1160px) {
+    .article1 .navigation {
+        @include grid (min-content 1fr max-content, space-between, center, 0px);
+
+        .logo {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            justify-self: center;
+
+            img {
+                justify-self: center;
+                margin: auto;
+            }
+        }
+
+        .basket {
+            justify-self: center;
+        }
+    }
+
+    .header {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        .slide-box {
+            margin-bottom: 385px;
+
+            .btn-slide {
+                border: 1px solid #000;
+            }
+        }
+    }
+
+    .header-skill {
+        justify-self: center;
+        width: 100%;
+        margin-top: 0px;
+
+        h1 {
+            text-align: center;
+            font-size: 1.7em;
+            margin-top: 40px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            margin: auto;
+            margin-top: 40px;
+        }
+    }
+
+    .header-skill-bg1 {
+        background-image: url(img/header-fon-shadow.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .header-skill-bg2 {
+        background-image: url(img/header-fon2-shadow.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .header-skill-bg3 {
+        background-image: url(img/header-fon3-shadow.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .header-fon {
+        display: none;
+    }
+
+    .article2-content .article2-scope {
+        justify-content: space-around;
+    }
+
+    .article3-benefits {
+        justify-content: space-around;
+        justify-items: center;
+
+        .benefits-text {
+            text-align: center;
+
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        .benefits-ponts {
+            padding-top: 40px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+    .article1 .navigation {
+        @include grid (1fr 1fr, stretch, center, 0px);
+        grid-template:
+            'a b'
+            'c c';
+        grid-row-gap: 10px;
+
+        .logo {
+            grid-area: a;
+        }
+
+        .basket {
+            display: none;
+            grid-area: b;
+        }
+
+        .basket-icon {
+            display: block;
+            width: 50px;
+            height: auto;
+            grid-area: b;
+
+            path {
+                fill: #000;
+            }
+
+            circle {
+                fill: #000;
+            }
+        }
+
+        .nav-list {
+            padding-top: 20px;
+            grid-area: c;
+        }
+    }
+
+    .article2 {
+        margin-top: 20px;
+    }
+
+    .scope-box {
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        button {
+            margin: auto;
+            margin-top: 2em;
+        }
+    }
+
+    .article3-sites {
+        justify-content: space-around;
+
+        a {
+            justify-self: center;
+            width: 50%;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .article4-map {
+        margin-top: 0px;
+
+        .map-window {
+            left: 0px;
+            top: 150px;
+            padding-top: 15px;
+            width: 180px;
+            height: 170px;
+            font-size: 12px;
+            background-color: rgba(255, 255, 255, 0.8);
+
+            .map-window-content {
+                padding-left: 10px;
+            }
+
+            h4 {
+                font-size: 12px;
+            }
+
+            .map-window-btn {
+                width: 152px;
+                margin-top: 20px;
+
+            }
+        }
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+
+        .footer-social {
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 20px;
+            order: 2;
+        }
+
+        .footer-gofrends {
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    body .modal {
+        padding: 10px 10px 84px 10px;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        .form-modal {
+            grid-template:
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g"
+        }
+
+        .modal-user-message {
+            width: 100%;
+        }
+
+        .btn-close {
+            right: 0px;
+            top: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .article1 .navigation {
+        @include grid (1fr 1fr, stretch, space-between, 0px);
+        grid-row-gap: 10px;
+
+        .nav-list {
+            justify-items: center;
+        }
+    }
+
+    .header {
+        height: max-content;
+    }
+
+    .scope-box {
+        padding-bottom: 20px;
+    }
+
+    .article4-map {
+        background-image: url(img/mapAndMarkermin.jpg);
+    }
+}

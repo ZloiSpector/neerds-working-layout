@@ -1,0 +1,35 @@
+@mixin fontSizeColor ($size: 16, $weight: normal, $color: black) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin anormal ($acolor: black) {
+    text-decoration: none;
+    color: $acolor;
+}
+
+@mixin grid ($gtcolums, $jcontent: stretch, $jitems: center, $gap: 0px) {
+    display: grid;
+    grid-template-columns: $gtcolums;
+    justify-content: $jcontent;
+    justify-items: $jitems;
+    grid-gap: $gap;
+}
+
+@mixin gridself ($jself: center, $aself: center) {
+    justify-self: $jself;
+    align-self: $aself;
+}
+
+@mixin flexbox ($jcontent: stretch, $jitems: center) {
+    display: flex;
+    justify-content: $jcontent;
+    justify-items: $jitems;
+}
+
+@mixin absolute ($left: 0, $top: 0) {
+    position: absolute;
+    left: $left;
+    top: $top;
+}

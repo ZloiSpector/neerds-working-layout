@@ -1,0 +1,295 @@
+@media screen and (max-width: 1160px) {
+  .article1 .navigation {
+    display: grid;
+    grid-template-columns: -webkit-min-content 1fr -webkit-max-content;
+    grid-template-columns: min-content 1fr max-content;
+    justify-content: space-between;
+    justify-items: center;
+    grid-gap: 0px;
+  }
+  .article1 .navigation .logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-self: center;
+  }
+  .article1 .navigation .logo img {
+    justify-self: center;
+    margin: auto;
+  }
+  .article1 .navigation .basket {
+    justify-self: center;
+  }
+
+  .header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .header .slide-box {
+    margin-bottom: 100px;
+  }
+  .header .slide-box .btn-slide {
+    border: 1px solid #000;
+  }
+
+  .header-skill {
+    justify-self: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .header-skill h1 {
+    text-align: center;
+    font-size: 1.7em;
+    margin-top: 40px;
+  }
+  .header-skill p {
+    text-align: center;
+  }
+  .header-skill button {
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .header-skill-bg1 {
+    background-image: url(img/header-fon-shadow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .header-skill-bg2 {
+    background-image: url(img/header-fon2-shadow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .header-skill-bg3 {
+    background-image: url(img/header-fon3-shadow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .header-fon {
+    display: none;
+  }
+
+  .article2-content .article2-scope {
+    justify-content: space-around;
+  }
+
+  .article3-benefits {
+    justify-content: space-around;
+    justify-items: center;
+  }
+  .article3-benefits .benefits-text {
+    text-align: center;
+  }
+  .article3-benefits .benefits-text h2 {
+    font-size: 2em;
+  }
+  .article3-benefits .benefits-ponts {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .article1 .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: stretch;
+    justify-items: center;
+    grid-gap: 0px;
+    grid-template: "a b" "c c";
+    grid-row-gap: 10px;
+  }
+  .article1 .navigation .logo {
+    grid-area: a;
+  }
+  .article1 .navigation .basket {
+    display: none;
+    grid-area: b;
+  }
+  .article1 .navigation .basket-icon {
+    display: block;
+    width: 50px;
+    height: auto;
+    grid-area: b;
+  }
+  .article1 .navigation .basket-icon path {
+    fill: #000;
+  }
+  .article1 .navigation .basket-icon path:hover {
+    cursor: pointer;
+    fill: #fb565a;
+  }
+  .article1 .navigation .basket-icon circle {
+    fill: #000;
+  }
+  .article1 .navigation .basket-icon circle:hover {
+    cursor: pointer;
+  }
+  .article1 .navigation .nav-list {
+    padding-top: 20px;
+    grid-area: c;
+  }
+
+  .article2 {
+    margin-top: 20px;
+  }
+
+  .scope-box {
+    text-align: center;
+  }
+  .scope-box img {
+    width: 100%;
+    height: auto;
+  }
+  .scope-box button {
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .article3-sites {
+    justify-content: space-around;
+  }
+  .article3-sites a {
+    justify-self: center;
+    width: 50%;
+  }
+  .article3-sites img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+  }
+
+  .article4-map {
+    margin-top: 0px;
+  }
+  .article4-map .map-window {
+    left: 0px;
+    top: 150px;
+    padding-top: 15px;
+    width: 180px;
+    height: 170px;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .article4-map .map-window .map-window-content {
+    padding-left: 10px;
+  }
+  .article4-map .map-window h4 {
+    font-size: 12px;
+  }
+  .article4-map .map-window .map-window-btn {
+    width: 152px;
+    margin-top: 20px;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .footer-content .footer-social {
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+    order: 2;
+  }
+  .footer-content .footer-gofrends {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .footer-content .footer-gofrends h3 {
+    font-size: 18px;
+  }
+  .footer-content .footer-gofrends p {
+    font-size: 14px;
+  }
+
+  body .modal {
+    padding: 10px 10px 84px 10px;
+  }
+  body .modal h2 {
+    font-size: 2em;
+  }
+  body .modal .form-modal {
+    grid-template: "a" "b" "c" "d" "e" "f" "g";
+  }
+  body .modal .modal-user-message {
+    width: 100%;
+  }
+  body .modal .btn-close {
+    right: 0px;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .article1 .navigation .logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  body .modal .form-modal > .logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .article1 .navigation .basket {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  body .modal .form-modal > .basket {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .article1 .navigation .basket-icon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  body .modal .form-modal > .basket-icon {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .article1 .navigation .nav-list {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  body .modal .form-modal > .nav-list {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .article1 .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: stretch;
+    justify-items: space-between;
+    grid-gap: 0px;
+    grid-row-gap: 10px;
+  }
+  .article1 .navigation .nav-list {
+    justify-items: center;
+  }
+  
+  .header .slide-box {
+    margin-bottom: 65px;
+  }
+
+  .header {
+    height: -webkit-max-content;
+    height: max-content;
+  }
+
+  .scope-box {
+    padding-bottom: 20px;
+  }
+
+  .article4-map {
+    background-image: url(img/mapAndMarkermin.jpg);
+  }
+}
